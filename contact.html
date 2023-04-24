@@ -28,8 +28,112 @@
         </nav>
         <p class="text-blue-600">English</p>
       </div>
+      <div class="relative overflow-hidden">
+        <img
+          class="w-full h-4/6 object-cover"
+          src="./public/Contact us-0.png"
+          alt="services" />
+        <div
+          class="w-full absolute top-1/2 -translate-y-1/2 left-0 p-8 bg-gray-800/60">
+          <h1 class="text-5xl text-white font-semibold text-center">
+            CONTACT US
+          </h1>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <!--? -------------------------------- Contacts --------------------------------- -->
+      <section class="min-h-screen relative my-12">
+        <div
+          class="bg-blue-600 w-[500px] h-[900px] absolute right-0 top-0 z-[-1]"></div>
+        <div
+          class="flex lg:flex-row flex-col justify-center gap-5 px-4 2xl:px-12 py-14">
+          <div class="flex-1 w-full md:w-[90%] mx-auto flex flex-col bg-white">
+            <div class="2xl:p-12 p-5">
+              <div class="mb-5">
+                <h2 class="text-6xl font-semibold">
+                  Get in <span class="text-blue-600">touch</span>
+                </h2>
+                <p class="mt-5 text-xl">
+                  Drop us a message or arrange a visit, we are more than happy
+                  to meet you. Don't forget to bring all of your ideas with you,
+                  we're eager to hear them.
+                </p>
+              </div>
+              <form class="flex flex-col">
+                <input type="text" placeholder="Contact name" required />
+                <input type="text" placeholder="Street" required />
+                <div class="flex md:flex-row flex-col md:items-center md:gap-8">
+                  <input
+                    type="text"
+                    placeholder="City"
+                    required
+                    class="flex-1" />
+                  <input
+                    type="text"
+                    placeholder="Postcode"
+                    required
+                    class="flex-[0.1]" />
+                </div>
+                <input type="number" placeholder="Contact Phone" required />
+                <input type="text" placeholder="E-mail" required />
+                <input type="text" placeholder="Enter Your Message" required />
+                <div class="flex items-center gap-3 my-4">
+                  <input
+                    class="w-5 h-5"
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox" />
+                  <label class="text-xl" for="checkbox"
+                    >I want to protect my data by signing an NDA</label
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="uppercase bg-blue-600 text-white font-bold w-full text-2xl rounded-2xl py-5">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="flex-1 flex items-center justify-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5125.18826364198!2d15.784690682856427!3d50.03770057655173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dcced01ca0a41%3A0x81f60afc2c3c609e!2sSTAPRO%20s.%20r.%20o.!5e0!3m2!1sar!2sdz!4v1682330690980!5m2!1sar!2sdz"
+              class="relative w-[80%] h-80 lg:h-[900px]"
+              style="border: 0"
+              allowfullscreen=""
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <ul
+          class="flex flex-wrap gap-4 justify-around items-start w-5/6 md:w-4/6 mx-auto">
+          <li class="flex w-fit max-w-xs items-center gap-4">
+            <box-icon name="phone-call" class="w-10 h-10"></box-icon>
+            <div class="flex flex-col">
+              <span class="font-medium text-xl">Phone</span>
+              <span class="text-blue-500 text-lg">011 204 04 04</span>
+            </div>
+          </li>
+          <li class="flex w-fit max-w-xs items-center gap-4">
+            <box-icon name="envelope" class="w-10 h-10"></box-icon>
+            <div class="flex flex-col">
+              <span class="font-medium text-xl">E-MAIL</span>
+              <span class="text-blue-500 text-lg">info@alphasaad.com</span>
+            </div>
+          </li>
+          <li class="flex w-fit max-w-xs items-center gap-4 overflow-hidden">
+            <box-icon type="solid" name="user-pin" class="w-10 h-10"></box-icon>
+            <div class="flex flex-col">
+              <span class="font-medium text-xl">ADDRESS</span>
+              <span class="text-blue-500 text-lg"
+                >Riyadh, Exit 9 Imam Saud bin Abdelaziz, Al Ezdihar District
+                4396</span
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="flex h-[340px]">
       <div class="flex-[0.1] bg-gray-500 h-full lg:block hidden"></div>
       <div
