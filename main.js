@@ -39,9 +39,9 @@ const projectsSlider = tns({
   autoplay: true,
   loop: false,
   rewind: true,
-  // controlsContainer: ".controlsContainer",
-  // prevButton: ".prevBtn",
-  // nextButton: ".nextBtn",
+  controlsContainer: ".controlsContainerProjects",
+  prevButton: ".prevBtnProjects",
+  nextButton: ".nextBtnProjects",
   responsive: {
     300: {
       items: 1,
