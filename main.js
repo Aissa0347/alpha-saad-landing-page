@@ -15,8 +15,7 @@ const pathname = window.location.pathname.split("/")[1];
 
 for (let i = 0; i < items.length; i++) {
   const a = i === 0 ? items[0].children[1] : items[i].children[0];
-  console.log(a);
-  const isEqual = a.getAttribute("href").includes(pathname);
+  const isEqual = i === 0 && pathname === "" ? true : pathname.includes(a.getAttribute("href"));
   if (isEqual) {
     if (!a.classList.contains("active")) a.classList.add("active");
   } else a.classList.remove("active");
