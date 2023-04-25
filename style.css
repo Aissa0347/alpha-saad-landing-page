@@ -15,3 +15,7 @@ input {
 .hide {
     right: -144px !important;
 }
+
+a.active {
+    @apply pb-1 border-b-2 border-blue-600 text-blue-600
+}
