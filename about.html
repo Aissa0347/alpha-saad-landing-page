@@ -10,24 +10,40 @@
   <body class="overflow-hidden overflow-y-auto">
     <header class="mb-12">
       <!--? -------------------------------- Navbar --------------------------------- -->
-      <div
-        class="flex items-center justify-between my-4 max-w-screen-2xl mx-auto">
+      <nav
+        class="flex items-center justify-between my-4 max-w-[95%] lg:max-w-[90%] 2xl:max-w-screen-2xl mx-auto">
         <div>
-          <img
-            loading="lazy"
-            class="h-12"
-            src="./Alpha Saad Contracting Company LOGO1.png"
-            alt="Alpha Saad Contracting Company LOGO" />
+          <a href="index.html">
+            <img
+              loading="lazy"
+              class="h-8 lg:h-12"
+              src="./Alpha Saad Contracting Company LOGO1.png"
+              alt="Alpha Saad Contracting Company LOGO" />
+          </a>
         </div>
-        <nav class="flex gap-4">
-          <a href="index.html" class="hover:text-blue-600">Home</a>
-          <a href="services.html" class="hover:text-blue-600">Services</a>
-          <a href="projects.html" class="hover:text-blue-600">Projects</a>
-          <a href="about.html" class="hover:text-blue-600">About us</a>
-          <a href="contact.html" class="hover:text-blue-600">Contact us</a>
-        </nav>
+        <ul
+          class="nav-items hide md:static absolute top-14 right-0 transition duration-100 ease-out flex md:flex-row flex-col md:p-0 p-3 gap-4 bg-white z-10">
+          <li>
+            <a href="index.html" class="hover:text-blue-600">Home</a>
+          </li>
+          <li>
+            <a href="services.html" class="hover:text-blue-600">Services</a>
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-blue-600">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-blue-600">About us</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-600">Contact us</a>
+          </li>
+        </ul>
         <p class="text-blue-600">English</p>
-      </div>
+        <button class="md:hidden block burger">
+          <box-icon name="menu"></box-icon>
+        </button>
+      </nav>
       <div class="relative overflow-hidden">
         <img
           class="w-full h-4/6 object-cover"

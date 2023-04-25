@@ -1,6 +1,17 @@
 import "./style.css";
 import { tns } from "tiny-slider";
 
+
+// Navbar
+const items = document.querySelector(".nav-items");
+const btn = document.querySelector(".burger");
+
+btn.addEventListener("click", () => {
+  if(items.classList.contains("hide")) items.classList.remove("hide");
+  else items.classList.add("hide");
+})
+
+// Sliders
 const clientsSlider = tns({
   container: ".mySlider",
   items: 3,
