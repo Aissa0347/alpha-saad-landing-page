@@ -13,8 +13,7 @@ input {
 }
 
 .hide {
-    right: -144px !important;
-    display: none !important;
+    @apply -right-36 hidden md:flex
 }
 
 a.active {
