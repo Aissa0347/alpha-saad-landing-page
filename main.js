@@ -15,7 +15,6 @@ const pathname = window.location.pathname.split("/")[1];
 
 for (let i = 0; i < items.length; i++) {
   const a = i === 0 ? items[0].children[1] : items[i].children[0];
-  console.log(a);
   const isEqual = a.getAttribute("href").includes(pathname);
   if (isEqual) {
     if (!a.classList.contains("active")) a.classList.add("active");
@@ -89,7 +88,3 @@ const projectsSlider = tns({
     },
   },
 });
-
-document
-  .querySelectorAll(".tns-liveregion.tns-visually-hidden")
-  .forEach((element) => element.remove());
