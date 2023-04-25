@@ -1,6 +1,28 @@
 import "./style.css";
 import { tns } from "tiny-slider";
 
+// Navbar
+const navItems = document.querySelector(".nav-items");
+const btn = document.querySelector(".burger");
+
+btn.addEventListener("click", () => {
+  if (navItems.classList.contains("hide")) navItems.classList.remove("hide");
+  else navItems.classList.add("hide");
+});
+
+const items = navItems.children;
+const pathname = window.location.pathname.split("/")[1];
+
+for (let i = 0; i < items.length; i++) {
+  const a = i === 0 ? items[0].children[1] : items[i].children[0];
+  console.log(a);
+  const isEqual = a.getAttribute("href").includes(pathname);
+  if (isEqual) {
+    if (!a.classList.contains("active")) a.classList.add("active");
+  } else a.classList.remove("active");
+}
+
+// Sliders
 const clientsSlider = tns({
   container: ".mySlider",
   items: 3,
