@@ -32,11 +32,11 @@
       <div
         class="flex flex-col-reverse xl:flex-row justify-between items-center">
         <div class="xl:w-1/2 m-4">
-          <h1 class="text-4xl lg:text-5xl font-bold text-blue-800 mb-3">
+          <h1 class="text-4xl sm:text-5xl font-bold text-blue-800 mb-4">
             Alpha Saad <br />
             Contracting Company
           </h1>
-          <p class="md:ml-6 mb-4">
+          <p class="md:ml-6 mb-6">
             Since the day it was founded, the emphasis of AlphaSaad has been on
             complying with the kingdom 2030 vision, delivering quality works,
             with the highest standards of safety. Due to its ongoing success,
@@ -46,16 +46,16 @@
             which includes, but not limited to: general contracting, Building’s
             construction (Residential, Hotels, Hospitals)
           </p>
-          <div class="flex gap-2 md:ml-12">
+          <div class="flex flex-wrap gap-2 md:ml-12">
             <button
-              class="text-white font-semibold bg-gray-600 hover:bg-gray-700 active:bg-gray-800 py-3 px-6 rounded-md">
+              class="max-sm:w-full text-white font-semibold bg-gray-600 hover:bg-gray-700 active:bg-gray-800 py-4 px-8 rounded-md">
               <box-icon
                 class="align-bottom mr-1 fill-white"
                 name="error-circle"></box-icon>
               ABOUT US
             </button>
             <button
-              class="text-white font-semibold bg-blue-600 hover:bg-blue-700 active:bg-blue-800 py-3 px-6 rounded-md">
+              class="max-sm:w-full text-white font-semibold bg-blue-600 hover:bg-blue-700 active:bg-blue-800 py-4 px-8 rounded-md">
               <box-icon
                 class="align-bottom mr-1 fill-white"
                 name="phone-call"></box-icon>
@@ -66,8 +66,11 @@
         <div class="">
           <img
             loading="lazy"
-            class="max-xl:max-h-[500px] drop-shadow-2xl shadow-blue-600"
+            class="max-h-[900px] max-xl:max-h-[500px] drop-shadow-2xl shadow-blue-600"
             src="./Home-0.png"
+            srcset="./Home-0.1.png 300w, ./Home-0.png 1280w"
+            sizes="(max-width: 1280px) 300px,
+         1280px"
             alt="home-0" />
         </div>
       </div>
@@ -75,14 +78,23 @@
     <main>
       <!--? -------------------------------- About us --------------------------------- -->
       <section
-        class="min-h-[720px] max-h-full text-white flex flex-col lg:flex-row items-center mb-12 gap-8 bg-blue-600 p-8">
-        <div class="flex flex-1 flex-wrap flex-row lg:flex-col h-full gap-4">
-          <div class="flex flex-wrap gap-4">
+        class="min-h-[720px] max-h-full text-white flex flex-col lg:flex-row items-center mb-12 gap-8 bg-blue-600 py-8 px-4 md:p-8">
+        <div
+          class="w-full flex flex-1 flex-wrap flex-row lg:flex-col h-full gap-4">
+          <div class="w-full flex flex-wrap gap-4">
             <div
-              class="h-80 grid place-items-center bg-stone-700 rounded-xl p-2">
-              <h2 class="text-6xl font-semibold">ABOUT <br />US</h2>
+              class="relative h-80 flex-1 grid place-items-center bg-stone-700 rounded-xl px-8 py-4 overflow-hidden">
+              <h2 class="text-5xl font-bold">ABOUT <br />US</h2>
+              <box-icon
+                class="absolute bottom-0 translate-y-1/4 right-0 translate-x-1/4 w-44 h-44 fill-stone-500"
+                name="error-circle"></box-icon>
             </div>
-            <div class="h-80">h2\</div>
+            <div class="min-w-fit bg-red-400 flex-1 rounded-xl overflow-hidden">
+              <img
+                class="w-full h-80 object-cover"
+                src="./public/Home-AboutUs0.png"
+                alt="about us" />
+            </div>
           </div>
           <img
             loading="lazy"
@@ -91,15 +103,27 @@
             alt="about us" />
         </div>
         <div class="flex-1">
-          <div class="flex my-6">
-            <div>
-              <h4>OUR MISSION</h4>
+          <div class="w-full flex justify-around gap-2 my-6">
+            <div class="text-center">
+              <img
+                class="w-14 h-14 mx-auto mb-2"
+                src="./Home-AboutUs1.png"
+                alt="our mission" />
+              <h4 class="font-medium">OUR MISSION</h4>
             </div>
-            <div>
-              <h4>OUR VISION</h4>
+            <div class="text-center">
+              <img
+                class="w-14 h-14 mx-auto mb-2"
+                src="./Home-AboutUs2.png"
+                alt="our vision" />
+              <h4 class="font-medium">OUR VISION</h4>
             </div>
-            <div>
-              <h4>OUR VALUES</h4>
+            <div class="text-center">
+              <img
+                class="w-14 h-14 mx-auto mb-2"
+                src="./Home-AboutUs3.png"
+                alt="our values" />
+              <h4 class="font-medium">OUR VALUES</h4>
             </div>
           </div>
           <p class="text-lg mb-6">
@@ -122,13 +146,15 @@
             construction industry AlphaSaad is certified Fire rated painting
             applicator from both Al-Jazeera & Jotun
           </p>
-          <button
-            class="text-blue-800 font-semibold bg-white hover:bg-gray-50 active:bg-gray-100 py-2 px-6 rounded-md">
-            <box-icon
-              class="align-bottom mr-1 fill-blue-800"
-              name="error-circle"></box-icon>
-            ABOUT US
-          </button>
+          <div class="text-center">
+            <button
+              class="max-sm:w-full text-blue-800 font-semibold bg-white hover:bg-gray-50 active:bg-gray-100 py-4 px-12 rounded-md">
+              <box-icon
+                class="align-bottom mr-1 fill-blue-800"
+                name="error-circle"></box-icon>
+              ABOUT US
+            </button>
+          </div>
         </div>
       </section>
       <!--? -------------------------------- Our services --------------------------------- -->
@@ -139,7 +165,7 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-8">
           <div
-            class="group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
+            class="single-service group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
             <img
               loading="lazy"
               class="object-cover w-full"
@@ -151,13 +177,13 @@
                 Buildings construction
               </h4>
               <img
-                class="hidden w-3/4 group-hover:block"
+                class="hidden w-3/4 group-hover:block border-b-2 border-gray-50 pb-2"
                 src="./Home-Buildings construction1.png"
                 alt="Buildings construction" />
             </div>
           </div>
           <div
-            class="group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
+            class="single-service group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
             <img
               loading="lazy"
               class="object-cover w-full"
@@ -169,13 +195,13 @@
                 Finishing & Decoration Painting
               </h4>
               <img
-                class="hidden w-3/4 group-hover:block"
+                class="hidden w-3/4 group-hover:block border-b-2 border-gray-50 pb-2"
                 src="./Home-Finishing Decoration1.png"
                 alt="Buildings construction" />
             </div>
           </div>
           <div
-            class="group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
+            class="single-service group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
             <img
               loading="lazy"
               class="object-cover w-full"
@@ -185,13 +211,13 @@
               class="group-hover:h-full group-hover:bg-gray-400/90 group-hover:grid group-hover:place-items-center group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-gray-500">
               <h4 class="text-2xl text-white font-medium">Electromechanics</h4>
               <img
-                class="hidden w-3/4 group-hover:block"
+                class="hidden w-3/4 group-hover:block border-b-2 border-gray-50 pb-2"
                 src="./Home-Electromechanics1.png"
                 alt="Buildings construction" />
             </div>
           </div>
           <div
-            class="group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
+            class="single-service group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
             <img
               loading="lazy"
               class="object-cover w-full"
@@ -203,13 +229,13 @@
                 Steel Structures Buildings
               </h4>
               <img
-                class="hidden w-3/4 group-hover:block"
+                class="hidden w-3/4 group-hover:block border-b-2 border-gray-50 pb-2"
                 src="./Home-Steel Structures1.png"
                 alt="Buildings construction" />
             </div>
           </div>
           <div
-            class="group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
+            class="single-service group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
             <img
               loading="lazy"
               class="object-cover w-full"
@@ -219,13 +245,13 @@
               class="group-hover:h-full group-hover:bg-gray-400/90 group-hover:grid group-hover:place-items-center group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-gray-500">
               <h4 class="text-2xl text-white font-medium">Epoxy Painting</h4>
               <img
-                class="hidden w-3/4 group-hover:block"
+                class="hidden w-3/4 group-hover:block border-b-2 border-gray-50 pb-2"
                 src="./Home-Epoxy Painting1.png"
                 alt="Buildings construction" />
             </div>
           </div>
           <div
-            class="group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
+            class="single-service group w-64 md:w-80 relative h-80 md:h-96 bg-gray-400 overflow-hidden rounded-lg">
             <img
               loading="lazy"
               class="object-cover w-full"
@@ -235,7 +261,7 @@
               class="group-hover:h-full group-hover:bg-gray-400/90 group-hover:grid group-hover:place-items-center group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-gray-500">
               <h4 class="text-2xl text-white font-medium">Road Construction</h4>
               <img
-                class="hidden w-3/4 group-hover:block"
+                class="hidden w-3/4 group-hover:block border-b-2 border-gray-50 pb-2"
                 src="./Home-Road Construction1.png"
                 alt="Buildings construction" />
             </div>
@@ -252,47 +278,47 @@
           <div class="mySlider flex">
             <img
               loading="lazy"
-              class="h-32 max-w-7xl object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (1).png"
               alt="logo 1" />
             <img
               loading="lazy"
-              class="h-32 max-w-7xl object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (2).png"
               alt="logo 2" />
             <img
               loading="lazy"
-              class="h-32 max-w-7xl object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (3).png"
               alt="logo 3" />
             <img
               loading="lazy"
-              class="h-32 object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (4).png"
               alt="logo 4" />
             <img
               loading="lazy"
-              class="h-32 object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (5).png"
               alt="logo 5" />
             <img
               loading="lazy"
-              class="h-32 object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (6).png"
               alt="logo 6" />
             <img
               loading="lazy"
-              class="h-32 object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (7).png"
               alt="logo 7" />
             <img
               loading="lazy"
-              class="h-32 object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (8).png"
               alt="logo 8" />
             <img
               loading="lazy"
-              class="h-32 object-contain"
+              class="contrast-0 hover:contrast-100 hover:drop-shadow duration-75 h-32 object-contain"
               src="./(LOGO)Our clients/Logo (9).png"
               alt="logo 9" />
           </div>
@@ -334,7 +360,7 @@
                 src="./(Img)Projects/Al Iman Gasket Factory in Dammam.jpg"
                 alt="Al Iman Gasket Factory in Dammam" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Al Iman Gasket Factory in Dammam
                 </h4>
@@ -348,7 +374,7 @@
                 src="./(Img)Projects/Dr.Sulaiman AlHabib Hospital in Khobar.jpg"
                 alt="Dr.Sulaiman AlHabib Hospital in Khobar" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Dr.Sulaiman AlHabib Hospital in Khobar
                 </h4>
@@ -362,7 +388,7 @@
                 src="./(Img)Projects/Dyar AlSaad project.jpeg"
                 alt="Dyar AlSaad project" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Dyar AlSaad project
                 </h4>
@@ -376,7 +402,7 @@
                 src="./(Img)Projects/Housing Building in Cairo.jpg"
                 alt="Housing Building in Cairo" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Housing Building in Cairo
                 </h4>
@@ -390,7 +416,7 @@
                 src="./(Img)Projects/King Khaled Airport Terminal 5.webp"
                 alt="King Khaled Airport Terminal 5" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   King Khaled Airport Terminal 5
                 </h4>
@@ -404,7 +430,7 @@
                 src="./(Img)Projects/Many Expositions in Cairo Expo City.jpg"
                 alt="Many Expositions in Cairo Expo City" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Many Expositions in Cairo Expo City
                 </h4>
@@ -418,7 +444,7 @@
                 src="./(Img)Projects/Princess Noura bint Abdullrahman University in Riyadh.jpg"
                 alt="Princess Noura bint Abdullrahman University in Riyadh" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Princess Noura bint Abdullrahman University in Riyadh
                 </h4>
@@ -432,7 +458,7 @@
                 src="./(Img)Projects/Renovation Housing Buildings to SWCC in Khobar.png"
                 alt="Renovation Housing Buildings to SWCC in Khobar" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Renovation Housing Buildings to SWCC in Khobar
                 </h4>
@@ -446,7 +472,7 @@
                 src="./(Img)Projects/Tow housing buildings Madinaty in Cairo.jpg"
                 alt="Tow housing buildings Madinaty in Cairo" />
               <div
-                class="group-hover:h-full group-hover:text-center absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
+                class="group-hover:h-full group-hover:grid group-hover:place-items-center group-hover:bg-blue-500/90 absolute bottom-0 left-0 w-full py-4 px-2 bg-blue-500/40">
                 <h4 class="text-2xl text-center text-white font-semibold">
                   Tow housing buildings Madinaty in Cairo
                 </h4>

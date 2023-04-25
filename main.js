@@ -8,6 +8,10 @@ const clientsSlider = tns({
   autoplay: true,
   loop: false,
   rewind: true,
+  mouseDrag: true,
+  autoplayButtonOutput: false,
+  nav: false,
+  lazyload: true,
   controlsContainer: ".controlsContainer",
   prevButton: ".prevBtn",
   nextButton: ".nextBtn",
@@ -39,24 +43,31 @@ const projectsSlider = tns({
   autoplay: true,
   loop: false,
   rewind: true,
+  autoplayButtonOutput: false,
+  nav: false,
+  lazyload: true,
   controlsContainer: ".controlsContainerProjects",
   prevButton: ".prevBtnProjects",
   nextButton: ".nextBtnProjects",
   responsive: {
     300: {
-      items: 1,
+      items: 1.3,
     },
     468: {
-      items: 2,
+      items: 2.3,
     },
     640: {
-      items: 3,
+      items: 3.3,
     },
     968: {
-      items: 4,
+      items: 4.3,
     },
     1280: {
-      items: 5,
+      items: 5.3,
     },
   },
 });
+
+document
+  .querySelectorAll(".tns-liveregion.tns-visually-hidden")
+  .forEach((element) => element.remove());
