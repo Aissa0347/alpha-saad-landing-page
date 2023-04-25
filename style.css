@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 input {
-    @apply border-b-2 border-gray-600 p-4 text-xl sm:text-2xl outline-none my-2 sm:my-4
+  @apply border-b-2 border-gray-600 p-4 text-xl sm:text-2xl outline-none my-2 sm:my-4;
 }
 
 .hide {
@@ -18,5 +18,9 @@ input {
 }
 
 a.active {
-    @apply pb-1 border-b-2 border-blue-600 text-blue-600
+  @apply pb-1 border-b-2 border-blue-600 text-blue-600;
+}
+
+.tns-liveregion.tns-visually-hidden {
+  display: none;
 }
